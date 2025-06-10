@@ -6,6 +6,96 @@
   <title>카카오뱅크</title>
 </head>
 <body>
-  <div>안녕</div>
+  <header class="con_min_width">
+    <div class="con border-blue flex">
+      <div class="border-red">
+        <a href="#">
+          <img src="" alt="">
+        </a>
+      </div>
+
+        <div class="border-black flex-grow-1"> </div>
+
+      <nav class="menu_box border-red">
+        <ul>
+          <li>은행소개</li>
+          <li>IR투자정보</li>
+          <li>상품안내</li>
+          <li>고객센터</li>
+        </ul>
+      </nav>
+      
+      <div class="border-red">
+        <a href="#">관련 사이트</a>
+      </div>
+
+    </div>
+  </header>
 </body>
+  <style>
+    /*노말라이즈*/
+    body, ul, li{
+      margin : 0;
+      padding: 0;
+    }
+
+    .border-red {
+      border: 5px solid red;
+    }
+
+    .border-blue {
+      border: 5px solid blue;
+    }
+
+    .border-black {
+      border: 5px solid black;
+    }
+
+    .border-green {
+      border: 5px solid green;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-jc-c {
+      justify-content: center;
+    }
+
+    .flex-ai-c {
+      align-items: center;
+    }
+
+    .flex-grow-l {
+      flex-grow: 1;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .height-100p {
+      height: 100%;
+    }
+
+    .con {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-box > img {
+      width: 100%;
+      display: block;
+    }
+
+    /*커스텀*/
+    .con-min-width {
+      min-width: 1080px;
+    }
+
+    .con {
+      width: 1080px;
+    }
+  </style>
 </html>
