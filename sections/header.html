@@ -161,14 +161,16 @@
     }
     /* -------------헤더 끝--------------- */
   
-
-
-
-
-
   </style>
 
   /*노말라이즈*/
-
+  <script>
+    $(window).click(function(event) {
+  if (!$(event.target).closest('.dropBtn').length) {
+    $('.dropdown_content').removeClass('is_active');
+    $('.dropBtn').removeClass('is_active');
+  }
+}); 
+  </script>
 </body>
 </html>
