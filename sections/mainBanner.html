@@ -8,6 +8,28 @@
 <body>
   <div class="main_banner con-min-width">
     <div class="bg"></div>
+    <div class="con">
+      <div class="main_banner con-min-width">
+        <div class="text_box">
+          <h3>이미 모두의 은행<br>지금은 카카오뱅크</h3>
+    
+          <p>한 사람, 한 사람을 위해 시작한 은행이<br>더 많은 사람들이 찾는 모두의 은행이 되었습니다.</p>
+          
+          <p>보내고, 받고, 모으고, 쓰는<br>당신의 모든 일이 바뀌고 있습니다.</p>
+    
+          <ul class="btns flex">
+            <li><a href="#">
+              <span class = "ico ico-1"></span>
+              <span>Google Play</span>
+            </a></li>
+            <li><a href="#">
+              <span class = "ico ico-2"></span>
+              <span>App Store</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="banner_img con img-box">
       <img src="../imgs/main-bg3.png" alt="">
     </div>
@@ -81,6 +103,18 @@
       display: block;
     }
 
+    .relative {
+      position: relative;
+    }
+
+    .ico {
+      background-color: white;
+      width: 24px;
+      height: 24px;
+      display: block;
+      background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_220615.png);
+    }
+
     /* 커스텀 */
     .con-min-width {
       min-width: 1080px;
@@ -108,6 +142,63 @@
       z-index: -1;
       background-color: #ffef6b;
     }
+
+     /* 메인 배너 시작 */
+     .main_banner {
+      background-color: #ffef6b;
+      padding: 100px;
+    }
+
+    /* 메인배너 텍스트 시작 */
+    .main_banner .text_box > h3 {
+      margin: 0;
+      font-size: 49px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+
+    .main_banner .text_box > p {
+      font-size: 16px;
+      line-height: 1.8;
+      opacity: .7;
+    }
+
+    .main_banner .text_box > .btns {
+      margin-top: 49px;
+    }
+
+    .main_banner .text_box > .btns > li:first-child {
+      padding-right: 12px;
+    }
+
+    .main_banner .text_box > .btns > li > a {
+      width: 178px;
+      height: 56px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 12px;
+      font-size: 16.2px;
+      font-weight: bold;
+      line-height: 56px;
+      color: #333;
+      background-color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main_banner .text_box > .btns > li:hover > a {
+      text-decoration: underline;
+    }
+    
+    .main_banner .text_box > .btns .ico-1 {
+      background-position: -341px -292px;
+    }
+
+    .main_banner .text_box > .btns .ico-2 {
+      background-position: -371px -292px;
+    }
+
+    /* 메인배너 텍스트 끝 */
     /* 메인 배너 끝 */
   </style>
 </body>
