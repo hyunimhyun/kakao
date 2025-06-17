@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 구글폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <!-- ((section.md_sec.md_sec_$.con>div*2)+div.md_divider)*5 -->
+  <section class="md_sec md_sec_1 con">
+      <div>
+        <h3>모바일로 더 손쉬운
+계좌개설, 간편한 이체</h3>
+      </div>
+      <div></div>
+  </section>
+  
+  <div class="md_divider"></div>
+  <section class="md_sec md_sec_2 con">
+      <div></div>
+      <div></div>
+  </section>
+
+  <div class="md_divider"></div>
+  <section class="md_sec md_sec_3 con">
+      <div></div>
+      <div></div>
+  </section>
+
+  <div class="md_divider"></div>
+  <section class="md_sec md_sec_4 con">
+      <div></div>
+      <div></div>
+  </section>
+
+  <div class="md_divider"></div>
+  <section class="md_sec md_sec_5 con">
+      <div></div>
+      <div></div>
+  </section>
+
+  <style>
+    /* 폰트 */
+    html {
+      /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+      font-family: "Roboto", "Noto Sans KR", sans-serif;
+    }
+
+    /* 노말라이즈 */
+    body, ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* 라이브러리 */
+    .border-red {
+      border: 5px solid red;
+    }
+
+    .border-blue {
+      border: 5px solid blue;
+    }
+
+    .border-black {
+      border: 5px solid black;
+    }
+
+    .border-green {
+      border: 5px solid green;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-jc-c {
+      justify-content: center;
+    }
+
+    .flex-ai-c {
+      align-items: center;
+    }
+
+    .flex-as-c {
+      align-self: center;
+    }
+
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .height-100p {
+      height: 100%;
+    }
+
+    .con {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-box > img {
+      width: 100%;
+      display: block;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .ico {
+      background-color: white;
+      width: 24px;
+      height: 24px;
+      display: block;
+      background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_220615.png);
+    }
+
+    /* 커스텀 */
+    .con-min-width {
+      min-width: 1080px;
+    }
+
+    .con {
+      width: 1080px;
+    }
+
+    /* 중간섹션 1 ~ 5 시작 */
+    .md_sec {
+      min-height: 500px;
+      border: 10px solid red;
+      display: flex;
+    }
+
+    .md_sec > div:first-child {
+      background-color: pink;
+      width: 60%;
+    }
+
+    .md_sec > div:last-child {
+      background-color: green;
+      flex-grow: 1;
+    }
+
+    .md_divider {
+      height: 32px;
+      /* background-color: #fafafa; */
+      background-color: lightgray;
+    }
+    /* 중간섹션 1 ~ 5 끝 */
+  </style>
+</body>
+</html>
