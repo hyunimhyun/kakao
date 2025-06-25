@@ -4,53 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-  <!-- 제이쿼리 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- 슬릭 슬라이더 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-
 </head>
 <body>
-  <div class="con-min-width checkcard_box">
+  
+  <div class="itskill_box con-min-width">
     <div class="con">
-      <h3>프렌즈 체크카드,<br>내가 고르는 선택의 즐거움</h3>
-      
-      <p>프렌즈 디자인부터 멋스러운 블랙 컬러 카드까지 원하는 디자인과 기능을 선택할 수 있습니다.</p>
+      <h3>IT 기술로 카카오뱅크를<br>만들어 갑니다.</h3>
 
-      <div class="btn_box">
-        <a href="#">
-          카카오뱅크 프렌즈 체크카드
-          <img src="/imgs/home_arr.png" alt="">
-        </a>
-      </div>
+      <div class="divider"></div>
 
-      <div class="slider_box">
-        <div class="arrows">
-          <div class="btn_arrow_left"><img src="/imgs/img-left.png" alt=""></div>
-          <div class="btn_arrow_right"><img src="/imgs/img-right.png" alt=""></div>
+      <div class="text_box">
+        <div class="bg_divider"></div>
+        <div class="img-box">
+          <img src="/imgs/home_it.png" alt="">
         </div>
+        <ul class="flex">
+          <li>
+            <strong>간결하고, 유려하게</strong>
+            <p>
+              작은 모바일 화면에 적합하도록
+              <br>
+              복잡함을 덜어낸
+              <br>
+              유려하고 친화적인 UX
+            </p>
+          </li>
+          
+          <li>
+            <strong>간편한 인증, 철저한 보안</strong>
+            <p>
+              지문, 비밀번호로 간편한 인증
+              <br>
+              IT 기술의 강력한 보안 검증과
+              <br>
+              데이터 암호화
+            </p>
+          </li>
 
-        <div class="slick">
-          <div class="item">
-            <div class="img-box"><img src="/imgs/card-1.png" alt=""></div>
-          </div>
-          <div class="item">
-            <div class="img-box"><img src="/imgs/card-2.png" alt=""></div>
-          </div>
-          <div class="item">
-            <div class="img-box"><img src="/imgs/card-3.png" alt=""></div>
-          </div>
-          <div class="item">
-            <div class="img-box"><img src="/imgs/card-4.png" alt=""></div>
-          </div>
-          <div class="item">
-            <div class="img-box"><img src="/imgs/card-5.png" alt=""></div>
-          </div>
-        </div>
+          <li class="flex-grow-1"></li>
+
+          <li>
+            <strong>Mobile First, One App</strong>
+            <p>
+              모바일에서 뱅킹이 더 쉽고 편리하게
+              <br>
+              여러 앱을 설치할 필요 없이
+              <br>
+              하나의 앱으로
+            </p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -144,108 +147,66 @@
       width: 1080px;
     }
 
-    /* 체크카드 시작 */
-  .checkcard_box {
-    padding-top: 150px;
-  }
-
-  .checkcard_box h3 {
-    font-size: 40px;
-    line-height: 1.35;
-    text-align: center;
-    margin: 0;
-  }
-
-  .checkcard_box p {
-    font-size: 15px;
-    margin-top: 24px;
-    line-height: 1.7;
-    color: #666;
-    text-align: center;
-  }
-
-  .checkcard_box .btn_box {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .checkcard_box .btn_box a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 258px;
-    height: 56px;
-    background-color: #f6f6f6;
-    font-size: 16px;
-    line-height: 56px;
-    color: #333;
-    border-radius: 10px;
-  }
-
-  .checkcard_box .btn_box a:hover {
-    text-decoration: underline;
-  }
-
-  .checkcard_box .btn_box a img {
-    width: 6px;
-    height: 9px;
-    margin: 3px 0 0 8px;
-    display: block;
-  }
-
-  /* 슬라이드 시작 */
-  .checkcard_box .slider_box {
-    position: relative;
-    width: 660px;
-    margin: 80px auto 0 auto;
-  }
-
-  .checkcard_box .slider_box .slick .item > .img-box {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .checkcard_box .slider_box .slick .item.slick-center {
-    transform: scale(1.17);
-  }
-
-  .checkcard_box .slider_box .arrows div {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: calc(100% + 150px);
-    cursor: pointer;
-  }
-
-  .checkcard_box .slider_box .arrows div:last-child {
-    right: auto;
-    left: calc(100% + 150px);
-  }
-
-  .checkcard_box .slider_box .arrows div:active {
-    transform: translateY(-45%);
-  }
-
-    /* 체크카드 끝 */
-  </style>
-
-  <script>
-    function SliderBox1__init() {
-      $('.slider_box > .slick').slick({
-        dots:false,
-        autoplay: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        centerMode:true,
-        centerPadding:0,
-        arrows:true,
-        prevArrow: ".slider_box > .arrows > .btn_arrow_left",
-        nextArrow: ".slider_box > .arrows > .btn_arrow_right"
-      });
+    /* IT 기술 박스 시작 */
+    .itskill_box {
+      background-color: #f9f9f9;
+      padding-top: 160px;
+      padding-bottom: 230px;
     }
 
-    SliderBox1__init();
-  </script>
+    .itskill_box h3 {
+      margin: 0;
+      font-size: 40px;
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    .itskill_box .divider {
+      width: 100px;
+      height: 2px;
+      background-color: #000;
+      margin: 50px auto 140px;
+    }
+
+    .itskill_box .text_box .bg_divider {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #eee;
+      top: 583px;
+      left: 0;
+      /* transform: translateY(123px); */
+    }
+
+    .itskill_box .text_box .img-box {
+      position: relative;
+    }
+
+    .itskill_box .text_box .img-box,
+    .itskill_box .text_box ul {
+      width: 1020px;
+      margin: 0 auto;
+    }
+
+    .itskill_box .text_box ul > li {
+      width: 25%;
+      height: 210px;
+      text-align: center;
+    }
+
+    .itskill_box .text_box ul > li > strong {
+      display: block;
+      margin: 45px 0 17px;
+      font-size: 18px;
+    }
+
+    .itskill_box .text_box ul > li > p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #898989;
+      /* color: #666; */
+    }
+    /* IT 기술 박스 끝 */
+  </style>
 </body>
 </html>
