@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 제이쿼리 불러오기 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- 슬릭 슬라이더 불러오기 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+</head>
+<body>
+  <div class="con-min-width checkcard_box">
+    <div class="con">
+      <h3>프렌즈 체크카드,<br>내가 고르는 선택의 즐거움</h3>
+      
+      <p>프렌즈 디자인부터 멋스러운 블랙 컬러 카드까지 원하는 디자인과 기능을 선택할 수 있습니다.</p>
+
+      <div class="btn_box">
+        <a href="#">
+          카카오뱅크 프렌즈 체크카드
+          <img src="/imgs/home_arr.png" alt="">
+        </a>
+      </div>
+
+      <div class="slider_box">
+        <div class="arrows">
+          <div class="btn_arrow_left"><img src="/imgs/img-left.png" alt=""></div>
+          <div class="btn_arrow_right"><img src="/imgs/img-right.png" alt=""></div>
+        </div>
+
+        <div class="slick">
+          <div class="item">
+            <div class="img-box"><img src="/imgs/card-1.png" alt=""></div>
+          </div>
+          <div class="item">
+            <div class="img-box"><img src="/imgs/card-2.png" alt=""></div>
+          </div>
+          <div class="item">
+            <div class="img-box"><img src="/imgs/card-3.png" alt=""></div>
+          </div>
+          <div class="item">
+            <div class="img-box"><img src="/imgs/card-4.png" alt=""></div>
+          </div>
+          <div class="item">
+            <div class="img-box"><img src="/imgs/card-5.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* 노말라이즈 */
+    body, ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* 라이브러리 */
+    .border-red {
+      border: 5px solid red;
+    }
+
+    .border-blue {
+      border: 5px solid blue;
+    }
+
+    .border-black {
+      border: 5px solid black;
+    }
+
+    .border-green {
+      border: 5px solid green;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-jc-c {
+      justify-content: center;
+    }
+
+    .flex-ai-c {
+      align-items: center;
+    }
+
+    .flex-as-c {
+      align-self: center;
+    }
+
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .height-100p {
+      height: 100%;
+    }
+
+    .con {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-box > img {
+      width: 100%;
+      display: block;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .ico {
+      background-color: white;
+      width: 24px;
+      height: 24px;
+      display: block;
+      background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_220615.png);
+    }
+
+    /* 커스텀 */
+    .con-min-width {
+      min-width: 1080px;
+    }
+
+    .con {
+      width: 1080px;
+    }
+
+    /* 체크카드 시작 */
+  .checkcard_box {
+    padding-top: 150px;
+  }
+
+  .checkcard_box h3 {
+    font-size: 40px;
+    line-height: 1.35;
+    text-align: center;
+    margin: 0;
+  }
+
+  .checkcard_box p {
+    font-size: 15px;
+    margin-top: 24px;
+    line-height: 1.7;
+    color: #666;
+    text-align: center;
+  }
+
+  .checkcard_box .btn_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .checkcard_box .btn_box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 258px;
+    height: 56px;
+    background-color: #f6f6f6;
+    font-size: 16px;
+    line-height: 56px;
+    color: #333;
+    border-radius: 10px;
+  }
+
+  .checkcard_box .btn_box a:hover {
+    text-decoration: underline;
+  }
+
+  .checkcard_box .btn_box a img {
+    width: 6px;
+    height: 9px;
+    margin: 3px 0 0 8px;
+    display: block;
+  }
+
+  /* 슬라이드 시작 */
+  .checkcard_box .slider_box {
+    position: relative;
+    width: 660px;
+    margin: 80px auto 0 auto;
+  }
+
+  .checkcard_box .slider_box .slick .item > .img-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .checkcard_box .slider_box .slick .item.slick-center {
+    transform: scale(1.17);
+  }
+
+  .checkcard_box .slider_box .arrows div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(100% + 150px);
+    cursor: pointer;
+  }
+
+  .checkcard_box .slider_box .arrows div:last-child {
+    right: auto;
+    left: calc(100% + 150px);
+  }
+
+  .checkcard_box .slider_box .arrows div:active {
+    transform: translateY(-45%);
+  }
+
+    /* 체크카드 끝 */
+  </style>
+
+  <script>
+    function SliderBox1__init() {
+      $('.slider_box > .slick').slick({
+        dots:false,
+        autoplay: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode:true,
+        centerPadding:0,
+        arrows:true,
+        prevArrow: ".slider_box > .arrows > .btn_arrow_left",
+        nextArrow: ".slider_box > .arrows > .btn_arrow_right"
+      });
+    }
+
+    SliderBox1__init();
+  </script>
+</body>
+</html>
