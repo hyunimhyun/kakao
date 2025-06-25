@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <footer class="con-min-width">
+    <div class="con">
+      <div class="box_1">
+        <div class="menu_box">
+          <ul>
+            <li><a href="#">모바일뱅킹 서비스 이용약관</a></li>
+            <li><a href="#">전자금융거래 기본약관</a></li>
+            <li><a href="#">위치기반 서비스 이용약관</a></li>
+            <li><a href="#">카카오뱅크 인증서 서비스 이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">신용정보활용체제</a></li>
+            <li><a href="#">전자서명인증업무준칙</a></li>
+            <br>
+            <li class="pd"><a href="#">전자민원접수</a></li>
+            <li><a href="#">보호금융상품등록부</a></li>
+            <li><a href="#">상품공시실</a></li>
+            <li><a href="#">경영공시</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li><a href="#">카카오뱅크 인증서 서비스 개인정보처리방침</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* 노말라이즈 */
+    body, ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* 라이브러리 */
+    .border-red {
+      border: 5px solid red;
+    }
+
+    .border-blue {
+      border: 5px solid blue;
+    }
+
+    .border-black {
+      border: 5px solid black;
+    }
+
+    .border-green {
+      border: 5px solid green;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-jc-c {
+      justify-content: center;
+    }
+
+    .flex-ai-c {
+      align-items: center;
+    }
+
+    .flex-as-c {
+      align-self: center;
+    }
+
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .height-100p {
+      height: 100%;
+    }
+
+    .con {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-box > img {
+      width: 100%;
+      display: block;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .ico {
+      background-color: white;
+      width: 24px;
+      height: 24px;
+      display: block;
+      background-image: url(https://www.kakaobank.com/static/images/web/img_kabang_220615.png);
+    }
+
+    /* 커스텀 */
+    .con-min-width {
+      min-width: 1080px;
+    }
+
+    .con {
+      width: 1080px;
+    }
+
+    /* 푸터 시작 */
+    footer {
+      background-color: #eee;
+    }
+
+    footer .box_1 {
+      padding: 20px 0 16px;
+      font-size: 11px;
+      color: #666;
+    }
+
+    footer .box_1 > .menu_box > ul > li {
+      display: inline-block;
+      padding: 4px 15px;
+      position: relative;
+    }
+
+    footer .box_1 > .menu_box > ul > li:not(:first-child)::after {
+      content: "";
+      background-color: #d8d8d8;
+      width: 1px;
+      height: 10px;
+      position: absolute;
+      top: 50%;
+      left: -1px;
+      transform: translateY(-50%);
+    }
+
+    footer .box_1 > .menu_box > ul > li:first-child {
+      padding-left: 0;
+    }
+
+    footer .box_1 > .menu_box > ul > li.pd {
+      margin-left: 15px;
+    }
+    /* 푸터 끝 */
+  </style>
+</body>
+</html>
